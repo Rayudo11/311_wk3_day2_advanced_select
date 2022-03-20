@@ -29,28 +29,34 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 
 1. Get a sum of all the user_ids from the `usersAddress` table grouped by state. Enter the values for the specific states below.
 
+<!-- SELECT * FROM usersAddress WHERE state LIKE "WY%" -->
+
 2. Find the most popular area code in the `usersContact` table. 
   * Hint: SUBSTR, GROUP BY
+
+  <!-- SELECT substr(phone1,1,3) AS areacode FROM usersContact GROUP BY areacode ORDER BY COUNT(*) DESC LIMIT 1; -->
 
 3. Find the MIN first_name, the county, and a count of all users in that county for counties with more than 10 users. There will be four results. List the last one. 
   * Hint: MIN, COUNT, JOIN, GROUP BY, HAVING
 
 
+
+
 ## Query Responses
 
 1. Sums
-  * AK:
-  * CT
-  * TX:
-  * WY:
+  * AK: 12
+  * CT: 10
+  * TX: 64
+  * WY: 6
 
 2.
-  * Area code:
+  * Area code: 973
 
 3.
-  * first_name:
-  * county:
-  * county total:
+  * first_name: Andra
+  * county: New York
+  * county total: 14
 
 
 ## Summary
