@@ -29,7 +29,7 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 
 1. Get a sum of all the user_ids from the `usersAddress` table grouped by state. Enter the values for the specific states below.
 
-<!-- SELECT * FROM usersAddress WHERE state LIKE "WY%" -->
+<!-- SELECT SUM(user_id) FROM usersAddress WHERE state LIKE "AK%" -->
 
 2. Find the most popular area code in the `usersContact` table. 
   * Hint: SUBSTR, GROUP BY
@@ -45,10 +45,10 @@ We are going to run a couple SQL queries and put the answers in the "Query Respo
 ## Query Responses
 
 1. Sums
-  * AK: 12
-  * CT: 10
-  * TX: 64
-  * WY: 6
+  * AK: 1422
+  * CT: 999
+  * TX: 7908
+  * WY: 1271
 
 2.
   * Area code: 973
